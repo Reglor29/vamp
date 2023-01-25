@@ -1,0 +1,93 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <link href="StyleSheet1.css" rel="stylesheet" />
+    <script src="JavaScript.js"></script>
+    <style>
+        body{
+            color:white;
+        }
+    </style>
+</head>
+<body>
+    <form onsubmit="return ending()" action="HomePage.html">
+        <table>
+            <tr>
+                <!-- שם פרטי -->
+                <td>שם פרטי</td>
+                <td><input type="text" id="fName" name="fName" placeholder="שם פרטי" required /></td>
+                <td> <div id="div1"></div></td>
+            </tr>
+            <tr>
+                <!-- שם משפחה -->
+                <td>שם משפחה</td>
+                <td><input type="text" id="lName" name="lName" placeholder="שם משפחה" /></td>
+                <td> <div id="div2"></div></td>
+            </tr>
+            <tr>
+                <!-- שנת לידה -->
+                <td>שנת לידה</td>
+                <td><input type="number" id="year" name="year" placeholder="שנת לידה" /></td>
+                <td> <div id="div3"></div></td>
+            </tr>
+            <tr>
+                <!-- מגדר -->
+                <td>מגדר:</td>
+                <td>
+                    נקבה: <input type="radio" id="female" name="gender" />
+                    זכר: <input type="radio" id="male" name="gender" />
+                    אחר: <input type="radio" id="other" name="gender" />
+                </td>
+                <td> <div id="div5"></div></td>
+            </tr>
+            <tr>
+                <!-- שם משתמש -->
+                <td>שם משתמש: </td>
+                <td><input type="text" id="userN" name="userN" placeholder="שם משתמש" required /></td>
+                <td> <div id="div4"></div></td>
+            </tr>
+            <tr>
+                <!-- סיסמה -->
+                <td>סיסמה:</td>
+                <td><input type="password" id="password1" name="password1" placeholder="סיסמה" required /></td>
+                <td> <div id="div6"></div></td>
+            </tr>
+            <tr>
+                <!-- אימות -->
+                <td>אימות</td>
+                <td><input type="password" id="passwordVari1" name="passwordVari1" placeholder="אימות סיסמה" /></td>
+                <td> <div id="div7"></div></td>
+            </tr>
+            <tr>
+                <td>אימייל</td>
+                <td><input type="email" id="email1" name="email1" placeholder="הכנס אימייל" /></td>
+                <td> <div id="div8"></div></td>
+            </tr>
+            <tr>
+                <!-- תחביבים -->
+                <td>הכנס את התחביבים שלך:</td>
+                <td><textarea id="hobbies1" name="hobbies1" rows="4" cols="50" style="width: 164px; height: 91px;"></textarea></td>
+                <td> <div id="div9"></div></td>
+            </tr>
+            <tr>
+                <!-- גיל -->
+                <td>הכנס את הגיל שלך:</td>
+                <td><input type="number" id="age1" name="age1" /></td>
+                <td> <div id="div10"></div></td>
+            </tr>
+            <tr>
+                <!-- טלפון -->
+                <td>הכנס מספר טלפון:</td>
+                <td><input type="number" id="phone1" name="phone1" /></td>
+                <td> <div id="div11"></div></td>
+            </tr>
+        </table>
+        <button onclick="userName()" type="submit">שלח</button>
+        <button type="reset">אפס</button>
+        <img src="../pictures/heart.png" class="logo" style="width:100px;height:100px;" />
+
+    </form>
+</body>
+</html>

@@ -1,0 +1,72 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Actors</title>
+    <link href="StyleSheet1.css" rel="stylesheet" />
+    <!-- java script -->
+    <script>
+        function language() {
+            if (lang.value == "heb") {
+                tvd1.style.direction = "rtl";
+                tvd1.innerHTML = "מורשות היא סדרת בת למקוריים וליומני הערפד. הסדרה מדברת על בית ספר שהוקם במיוחד לילדים עם יכולות קסם מיוחדות (כמו מכשפות, ערפדים ואנשי זאב). היא מתמקדת בכמה ילדים, הילדה של קלאוס מייקלסון והתאומות של קרוליין (דמויות מיומני הערפד).";
+            }
+            if (lang.value == "eng") {
+                tvd1.style.direction = "ltr";
+                tvd1.innerHTML = "Legacies is a spin-off of the vampire diaries and the originals. The show talks about a school that was established especially for special kids with magic abilities (like witches, werewolves, and vampires). It focused on a few students – like Klaus's Mikaelson daughter and Caroline twins (characters from the vampire dairies).";
+            }
+        }
+    </script>
+</head>
+<body>
+
+    <!--navagition bar-->
+    <ul>
+        <li><a href="HomePage.html">דף הבית</a></li>
+        <li class="dropdown">
+            <a href="javascript:void(0)" class="dropbtn">יומני הערפד</a>
+            <div class="dropdown-content">
+                <a href="HtmlPage2.html">הסדרה</a>
+                <a href="HtmlPage8.html">דיימון סאלבטור</a>
+            </div>
+        </li>
+        <li class="dropdown">
+            <a href="javascript:void(0)" class="dropbtn">המקוריים</a>
+            <div class="dropdown-content">
+                <a href="HtmlPage3.html">הסדרה</a>
+                <a href="HtmlPage7.html">קלאוס מייקלסון</a>
+            </div>
+        </li>
+        <li class="dropdown">
+            <a href="javascript:void(0)" class="dropbtn">מורשות</a>
+            <div class="dropdown-content">
+                <a href="HtmlPage4.html">הסדרה</a>
+                <a href="HtmlPage9.html">הופ מייקלסון</a>
+            </div>
+        </li>
+        <li><a href="HtmlPage5.html" class="active">שחקנים</a></li>
+        <li><a href="HtmlPage6.html">תמונות</a></li>
+    </ul>
+
+    <!-- language -->
+    <div style="direction:ltr;">
+        <select id="lang" style="width:80px; height:50px; font-size:20px;">
+            <option value="heb" selected>🇮🇱</option>
+            <option value="eng">🇺🇸</option>
+        </select>
+        <button onclick="language()" style="width:80px; height:50px; font-size:20px;">עב/ENG</button>
+    </div>
+    <!-- כותרת ולוגו -->
+    <h1 class="fontclass title">Actors</h1>
+    <img src="../pictures/heart.png" class="logo" style="width:100px;height:100px;" />
+    <!-- תוכן -->
+    <div id="tvd1" class="text">
+        <p><img src="../pictures/content_pic/actors/damon.jpg" alt="alt text" style="float: left; height: 150px; width: 100px">Ian Somerhalder - plays Damon</p>
+        <p><img src="../pictures/content_pic/actors/damon.jpg" alt="alt text" style="float: right; height: 150px; width: 100px">Nina Doberv - plays Elena</p>
+    </div>
+    <!--דף הרשמה-->
+    <a href="HtmlPage16.html">
+        <img class="sign" src="../pictures/content_pic/signup_login.png" />
+    </a>
+</body>
+</html>
